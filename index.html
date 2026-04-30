@@ -1,20 +1,59 @@
-<h1>Portfolio</h1>
+<!DOCTYPE html>
+<html lang="ja">
 
-<h2>About</h2>
-<p>PythonとFlaskで学習用Webアプリを開発しています。</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
 
-<h2>Skills</h2>
-<ul>
-  <li>Python</li>
-  <li>Flask</li>
-  <li>HTML / CSS</li>
-</ul>
+<body>
 
-<h2>Projects</h2>
+  <header class="hero">
+    <h1>Portfolio</h1>
+    <p>Python / Flask Web Application Developer</p>
+  </header>
 
-<h3>コード記述練習アプリ</h3>
-<p>Pythonのコード入力・判定を行う学習アプリ</p>
+  <main>
 
-<a href="projects/code-practice-app/index.html">
-  アプリ詳細を見る
-</a>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        職業訓練校でPythonとWeb開発を学習中です。<br>
+        PythonとFlaskを使ってWebアプリを開発しています。<br>
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+
+      <div class="tags">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>コード記述練習アプリ</h3>
+        <p>Pythonで作った学習用Webアプリ</p>
+        <a class="btn" href="projects/code-practice-app/index.html">
+          詳細を見る
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Nonaka</p>
+  </footer>
+
+</body>
+
+</html>
