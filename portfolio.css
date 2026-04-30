@@ -8,7 +8,7 @@ body {
 }
 
 /* ===== ヘッダー ===== */
-.hero {
+header {
   background: #2d3748;
   color: white;
   text-align: center;
