@@ -1,0 +1,44 @@
+<!-- 確認時は　http://127.0.0.1:5000 -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>コード判定アプリ</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>コード記述練習アプリ</h1>
+    </header>
+
+    <div class="main">
+
+        <h2>問題 {{ current }} / {{ total }}</h2>
+        <!-- <h3>スコア：{{ score }}</h3> -->
+        <p class="question">{{ question }}</p>
+
+        <form method="POST">
+            <textarea name="code" rows="6" cols="60" placeholder="ここにコードを書いてください">{{ user_code }}</textarea><br>
+            <button type="submit">判定</button>
+        </form>
+
+        <h3>{{ message }}</h3>
+
+        <pre>{{ output }}</pre>
+
+        {% if example %}
+        <h3>解答例</h3>
+        <pre>{{ example }}</pre>
+        {% endif %}
+
+        <div class="next-button">
+            <a href="/next">次の問題へ</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
