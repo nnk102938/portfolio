@@ -9,11 +9,7 @@ body {
 
 /* ===== ヘッダー ===== */
 header {
-<<<<<<< HEAD
   background: #2c4875;
-=======
-  background: #2d3748;
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -21,11 +17,7 @@ header {
 
 /* ===== セクション ===== */
 section {
-<<<<<<< HEAD
   max-width: 600px;
-=======
-  max-width: 800px;
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
   margin: 40px auto;
   padding: 0 20px;
 }

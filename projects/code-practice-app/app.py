@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 # 動作確認 ターミナルで↓
 # cd projects/code-practice-app
 # python3 app.py
 # http://127.0.0.1:5000/
 
-=======
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
 # ─────────────────────────────
 # (1)ライブラリのimport
 # ─────────────────────────────
@@ -81,7 +78,6 @@ def index():
         init_practice()
 
     qlist = session["questions"]
-<<<<<<< HEAD
 
     i = session["index"]
     if i >= len(qlist):
@@ -91,9 +87,6 @@ def index():
             total=TOTAL_QUESTIONS
         )
 
-=======
-    i = session["index"]
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
     score = session["score"]
 
     # 回答処理
@@ -134,12 +127,9 @@ def index():
 @app.route("/next")
 def next_question():
 
-<<<<<<< HEAD
     if "questions" not in session:
         init_practice()
 
-=======
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
     session["index"] += 1
 
     if session["index"] >= TOTAL_QUESTIONS:
@@ -153,7 +143,6 @@ def next_question():
 
 
 # ─────────────────────────────
-<<<<<<< HEAD
 # (7)もう一度挑戦
 # ─────────────────────────────
 @app.route("/restart")
@@ -165,9 +154,6 @@ def restart():
 
 # ─────────────────────────────
 # (8)アプリ起動処理
-=======
-#(7)アプリ起動処理
->>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
 # ─────────────────────────────
 if __name__ == "__main__":
     app.run(debug=True)
