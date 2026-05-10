@@ -6,9 +6,13 @@
 
 <head>
     <title>コード記述練習アプリ</title>
+<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="../static/style.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <!-- ↑ Flaskの書き方 -->
+=======
+    <link rel="stylesheet" href="../static/style.css">
+>>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
 </head>
 
 <body>
@@ -22,6 +26,7 @@
         <!-- <h3>スコア：{{ score }}</h3> -->
         <p class="question">{{ question }}</p>
 
+<<<<<<< HEAD
         <form method="POST" action="/">
             <textarea name="code" rows="6" cols="60" placeholder="ここにコードを書いてください">{{ user_code }}</textarea>
             <div class="judge-button">
@@ -36,6 +41,16 @@
         {% if output %}
         <pre>{{ output }}</pre>
         {% endif %}
+=======
+        <form method="POST">
+            <textarea name="code" rows="6" cols="60" placeholder="ここにコードを書いてください">{{ user_code }}</textarea><br>
+            <button type="submit">判定</button>
+        </form>
+
+        <h3>{{ message }}</h3>
+
+        <pre>{{ output }}</pre>
+>>>>>>> 6743e03ca7e6e2eef8f82e487d7a0c16e9ce02c6
 
         {% if example %}
         <h3>解答例</h3>
