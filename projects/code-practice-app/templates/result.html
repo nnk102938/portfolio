@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>結果</title>
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- ↑ Flaskの書き方 -->
+</head>
+
+<body>
+
+<header>
+    <h1>コード判定アプリ</h1>
+</header>
+
+<div class="main">
+
+    <h2>【結果】</h2>
+
+    <h3>{{ total }}問中 {{ score }}問正解</h3>
+
+    {% if score == total %}
+        <p>完璧です！</p>
+    {% elif score >= 3 %}
+        <p>よくできました！</p>
+    {% else %}
+        <p>もう少し頑張りましょう</p>
+    {% endif %}
+
+    <div class="next-button">
+        <a href="/restart">もう一度</a>
+    </div>
+
+</div>
+
+</body>
+</html>

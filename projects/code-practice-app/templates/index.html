@@ -1,0 +1,52 @@
+<!-- 確認時は　http://127.0.0.1:5000 -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>コード記述練習アプリ</title>
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- ↑ Flaskの書き方 -->
+</head>
+
+<body>
+    <header>
+        <h1>コード記述練習アプリ</h1>
+    </header>
+
+    <div class="main">
+
+        <h2>問題 {{ current }} / {{ total }}</h2>
+        <!-- <h3>スコア：{{ score }}</h3> -->
+        <p class="question">{{ question }}</p>
+
+        <form method="POST" action="/">
+            <textarea name="code" rows="6" cols="60" placeholder="ここにコードを書いてください">{{ user_code }}</textarea>
+            <div class="judge-button">
+                <button type="submit">判定</button>
+            </div>
+        </form>
+       
+        {% if message %}
+        <h3>{{ message }}</h3>
+        {% endif %}
+
+        {% if output %}
+        <pre>{{ output }}</pre>
+        {% endif %}
+
+        {% if example %}
+        <h3>解答例</h3>
+        <pre>{{ example }}</pre>
+        {% endif %}
+
+        <div class="next-button">
+            <a href="/next">次の問題へ</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
