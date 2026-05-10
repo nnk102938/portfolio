@@ -9,19 +9,33 @@
 
 <body>
 
-  <header>
-    <h1>Portfolio</h1>
-  </header>
+<header>
+  <h1>Portfolio</h1>
+  <p>学習記録・制作物をまとめたポートフォリオです</p>
+  <p>Pythonを使ったWebアプリを開発しています</p>
+</header>
 
   <main>
-
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        職業訓練校でPythonとWeb開発を学習中です。<br>
-        主にPythonを使ってWebアプリを開発しています。<br>
-      </p>
+    
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="project-text">
+          
+          <h3>コード記述練習アプリ</h3>
+          <p>Pythonのコードを入力し、出力結果で正誤判定を行うアプリです</p>
+          
+          <a class="btn" href="projects/code-practice-app/index.html" alt="アプリスクショ">
+            詳細を見る
+          </a>
+        </div>
+        
+        <div class="project-image">
+          <img src="images/code-app-top.webp" alt="アプリスクショ">
+        </div>
+      </div>
     </section>
+
 
     <section class="skills">
       <h2>Skills</h2>
@@ -34,17 +48,12 @@
       </div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-
-      <div class="card">
-        <h3>コード記述練習アプリ</h3>
-        <p>Pythonで作った学習用Webアプリです</p>
-        <a class="btn" href="projects/code-practice-app/index.html">
-          詳細を見る
-        </a>
-      </div>
-
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        職業訓練校でPythonとWeb開発を学習中です。<br>
+        主にPythonを使ってWebアプリを開発しています。<br>
+      </p>
     </section>
 
   </main>
