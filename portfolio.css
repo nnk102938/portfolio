@@ -14,19 +14,21 @@ body {
   line-height: 1.6;
 }
 
-/* ===== ヘッダー ===== */
-header {
-  background: #2c4875;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+ul {
+  padding-left: 22px;
 }
 
+li {
+  margin-bottom: 12px;
+}
+
+/* ===== ヘッダー ===== */
 header {
   max-width: 600px;
   margin: 40px auto 20px;
   padding: 40px 20px;
   background: #2c4875;
+  color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
@@ -65,6 +67,7 @@ section {
 
 .project-image img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -75,12 +78,22 @@ section {
   gap: 10px;
 }
 
-.project-gallery img {
+.gallery-item {
   flex: 1;
-  width: 0;
-  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.gallery-item img {
+  width: 100%;
   border-radius: 8px;
-  object-fit: cover;
+}
+
+.gallery-item p {
+  margin: 0;
+  font-size: 14px;
 }
 
 /* ===== セクション内カード ===== */

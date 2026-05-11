@@ -34,7 +34,7 @@ def init_practice():
     session["questions"] = random.sample(question_list, TOTAL_QUESTIONS)
     session["index"] = 0
     session["score"] = 0
-
+# どの問題を出しているか、今何問目か、スコアはいくつかをユーザーごとに保持
 
 # ─────────────────────────────
 # (4)判定処理
@@ -49,6 +49,7 @@ def judge(user_code, correct_answer):
     if "__" in user_code:
         return "特殊構文は禁止です", "", False
 
+# 使用できる関数を以下に制限 ↓
     try:
         safe_builtins = {
             "print": print,
